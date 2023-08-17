@@ -102,7 +102,7 @@ def main():
     print("# of training samples: %d\n" % int(len(dataset_train)))
 
     # Build model
-    model = PReNet1(recurrent_iter=opt.recurrent_iter, use_GPU=opt.use_gpu)
+    model = DTCN(recurrent_iter=opt.recurrent_iter, use_GPU=opt.use_gpu)
     print_network(model)
 
     # loss function
